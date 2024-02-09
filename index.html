@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treemap Diagram</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title"></h1>
+    </header>
+    <main>
+        <nav>
+            <a href="?data=videogames">Video Game Data Set</a> |
+            <a href="?data=movies">Movies Data Set</a> |
+            <a href="?data=kickstarter">Kickstarter Data Set</a>
+        </nav>
+        <div id="description"></div>
+        <svg id="treemap-diagram"></svg>
+        <svg id="legend" width="960"></svg>
+    </main>
+    <footer>
+        <p>&copy;
+            <script>document.write(new Date().getFullYear());</script> Treemap Diagram. All rights reserved.
+        </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3.0.0/dist/d3-scale-chromatic.min.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+
+</html>
